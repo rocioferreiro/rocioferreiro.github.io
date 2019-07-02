@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="date" content="2019-07-01" />
+<meta name="date" content="2019-07-02" />
 
 <title>Report Universidad Austral</title>
 <!-- Material Design fonts -->
@@ -850,7 +850,7 @@ $(document).ready(function () {
             <div class="col-xs-3">
         <div id="header">
     <h1 class="title">Report Universidad Austral</h1>
-                <h4 class="date">2019-07-01</h4>
+                <h4 class="date">2019-07-02</h4>
         </div>
     </div>
 </div>
@@ -978,7 +978,7 @@ $(document).ready(function () {
 </div>
 <div id="gbm" class="section level2">
 <h2>GBM</h2>
-<p>Primero, se produjo un modelo GBM, modelo de incremento estocástico del gradiente, observamos que en el se le da mayor prioridad al primer parcial de Algebra y al parcial de Análisis por sobre el resto. Este tiene una precisión del 97% segun las pruebas, y como observamos en la tabla adjunta, solo predijo mal un resultado:</p>
+<p>Primero, se produjo un modelo GBM, modelo de incremento estocástico del gradiente, observamos que en el se le da mayor prioridad al primer parcial de Algebra y al parcial de Análisis por sobre el resto. Este tiene una precisión del 97%, con un p-value de 0.0003, segun las pruebas, y como observamos en la tabla adjunta, solo predijo mal un resultado:</p>
 <table>
 <thead>
 <tr class="header">
@@ -1004,7 +1004,7 @@ $(document).ready(function () {
 </div>
 <div id="random-forest" class="section level2">
 <h2>Random Forest</h2>
-<p>Luego, generamos un modelo RandomForest, o en español, “Bosque Aleatorio”. Este es el único modelo que le dió la menor importancia a la nota de Análisis. Según las pruebas realizadas, tiene una exactitud del 93%, y como podemos observar en la tabla a continuación, solo predijo mal dos resultados:</p>
+<p>Luego, generamos un modelo RandomForest, o en español, “Bosque Aleatorio”. Este es el único modelo que le dió la menor importancia a la nota de Análisis. Según las pruebas realizadas, tiene una exactitud del 93%, con un p-value de 0.002 y como podemos observar en la tabla a continuación, solo predijo mal dos resultados:</p>
 <table>
 <thead>
 <tr class="header">
@@ -1030,7 +1030,7 @@ $(document).ready(function () {
 </div>
 <div id="nnet" class="section level2">
 <h2>NNET</h2>
-<p>Seguidamente, elaboramos un modelo NNET, modelo con una red neuronal. Este modelo también priorizó a Análisis, y tiene una precisión del 94%, como podemos observar en la tabla, ya que solo realizó dos predicciones erroneas:</p>
+<p>Seguidamente, elaboramos un modelo NNET, modelo con una red neuronal. Este modelo también priorizó a Análisis, y tiene una precisión del 94%, con un p-value de 0.002, como podemos observar en la tabla, ya que solo realizó dos predicciones erroneas:</p>
 <table>
 <thead>
 <tr class="header">
@@ -1056,7 +1056,7 @@ $(document).ready(function () {
 </div>
 <div id="glm" class="section level2">
 <h2>GLM</h2>
-<p>Por ultimo, producimos un modelo GLM, modelo lineal generalizado. Este último modelo prioriza también a Análisis en mayor medida que el resto de las calificaciones, y demostró una precisión del 84%, dandonos un total de cuatro predicciones incorrectas, como puede verse en la siguiente tabla:</p>
+<p>Por ultimo, producimos un modelo GLM, modelo lineal generalizado. Este último modelo prioriza también a Análisis en mayor medida que el resto de las calificaciones, y demostró una precisión del 84%, con un p-value de 0.03, dandonos un total de cuatro predicciones incorrectas, como puede verse en la siguiente tabla:</p>
 <table>
 <thead>
 <tr class="header">
